@@ -28,7 +28,7 @@ random-number-api:
   url: http://www.randomnumberapi.com/api/v1.0/random?min=0&max=2&count=1
 logging:
   level:
-    com.innowise: debug
+    com.innowise: ${APP_LOGGING_LEVEL:info}
 eureka:
   client:
     service-url:
