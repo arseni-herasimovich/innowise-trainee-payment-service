@@ -29,7 +29,7 @@ import java.util.Map;
 @Setter
 public class KafkaConsumerConfig {
 
-    @Value("${kafka.bootstrap-servers}")
+    @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
 
     private String trustedPackages = "*";
