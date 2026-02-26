@@ -55,7 +55,7 @@ public class KafkaProducerConfig {
                 .build();
     }
 
-    @Value("${kafka.bootstrap-servers}")
+    @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
 
     private String acks = "all";
